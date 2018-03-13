@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    font-size: 4em;
+    text-indent: 2em;
+    padding: 0.8em 0;
+    font-variant: small-caps;
+    color: #fff;
+    background: #000;
+    text-shadow: 2px 2px #FF0000;
+}
+#nav {
+    display: flex;
+    margin-bottom: 2em;
+    font-variant: small-caps;
+    text-shadow: 1px 1px #FF0000;
+    width: 100%;
+}
+#container {
+    width: 80%;
+}
+li {
+    flex:1;
+    font-size: 1.5em;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    display: flex;
+}
+li > a {
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    flex: 1;
+}
+#active > a {
+    background: #fff;
+    color: #000;
+    text-shadow: none;
+}
+    
+    .slicknav_menu {
+	display:none;
+}
+
+footer {
+    background:#000;
+    color: #dfdfdf;
+    width:100%;
+    margin:0 auto;
+    padding:1em 0;
+    text-align: center;
+    border-top:1px solid #000;
+    position: absolute;
+    bottom: 0;
+    }
+footer a {
+    color: #666;
+    text-decoration: none;
+    
+}
+footer a:hover {
+    color: #FF0000;
+}
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+main {
+    width: 60%;
+}
+aside {
+    width: 40%;
+}
+
+img {
+    width: 4em;
+    position: absolute;
+    top:1em;
+    margin-right: 8em;
+    z-index: 999;
+}
+fieldset {
+            width: 500px;
+        }
+        .row {
+            display: flex;
+        }
+        label, input {
+            flex: 1;
+            margin: 1em;
+        }
+    
+   @media all and (max-width:736px) {
+	/* #menu is the original menu */
+
+	#nav {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+    
+        header {
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        main, aside {
+            width: 100vw;
+        }
+        img {
+            display: none;
+            margin-left: 3em;
+        }
+        #container {
+            width: 100%;
+        }
+       fieldset {
+           width: 100%;
+           border: 0;
+       }
+}
+    
